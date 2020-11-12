@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Web</title>
+</head>
+<style>
+    body{
+        margin:0;
+        background-color: #e9ecef;
+    }
+    h1,h6{
+        color:red;
+    }
+    header{
+        margin: 30px;
+        
+        height: 80px;
+        border-radius: 10px;
+        position: relative;
+        border-radius: 25px;
+    }
+    header ul{
+        margin: 0px;
+        list-style: none;
+        padding: 0px;
+        height: inherit;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        border-radius: 5px;
+        overflow: hidden;
+       
+        
+    }
+    header ul li{
+        /* padding: 30px; */
+        margin: 0px;
+        color: red;
+        /* border: 1px solid black; */
+        box-sizing: content-box;
+        /* justify-content: space-around;
+        align-items: center; */
+        background-color: #b9c2ca;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    header ul li:hover{
+        color:white;
+        background-color: red;
+    }
+    section{
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        margin:30px;
+    }
+    section div{
+        margin: 25px;
+    }
+
+    section img {
+        border-radius: 10px;
+        width: 350px;
+        margin: 25px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer ol{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+    footer ol li img{
+        height: 30px;
+        width: 30px;
+    }
+
+    .section__list ol li{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .section__list ol li h6{
+        color: black;
+    }
+    .section__list__a--red{
+        color: red;
+        font-size: 10.72px;
+    }
+</style>
+<body>
+
+    <header>
+        <ul>
+            <li id="navHome"><b>Home</b></li>
+            <li id="naAbout"><b>Acerca de</b></li>
+            <li><b>Portafolio</b></li>
+            <li><b>Blog</b></li>
+            <li><b>Contacto</b></li>
+        </ul>
+    </header>
+    <section>
+        <div class="section__hero">
+                <h2>Entrada destacada</h2>
+                <h1>Crea un sitio web utilizando HTML5</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda minima esse omnis dolorum, quisquam, quam dicta repellat est ullam pariatur dolores adipisci necessitatibus dolorem laboriosam odit itaque, cumque quos eos!</p>
+        </div>
+        <img src="./man-5647507_640.jpg" alt="Hombre con vacas">
+    </section>
+    <section class="section__list">
+        <ol>
+            <li>
+                <div>
+                    <h6>El 20 de octubre de 2020</h6>
+                    <h6>Por <a class="section__list__a--red">Allen Gray</a> </h6>
+                    <h6><i>3 comentarios</i> </h6>
+                </div>
+                <div>
+                    <h1>Las bondades de HTML5</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum expedita recusandae et! Omnis similique inventore laboriosam nemo veritatis reprehenderit, dicta quasi rem enim praesentium deserunt doloremque et! Debitis, porro molestiae?</p>
+                    <a class="section__list__a--red">Leer mas</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h6>El 20 de octubre de 2020</h6>
+                    <h6>Por <a class="section__list__a--red">Allen Gray</a> </h6>
+                    <h6><i> 21 comentarios</i> </h6>
+                </div>
+                <div>
+                    <h1>HTML5 en dispositivos móviles</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum expedita recusandae et! Omnis similique inventore laboriosam nemo veritatis reprehenderit, dicta quasi rem enim praesentium deserunt doloremque et! Debitis, porro molestiae?</p>
+                    <a class="section__list__a--red">Leer mas</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h6>El 20 de octubre de 2020</h6>
+                    <h6>Por <a class="section__list__a--red">Allen Gray</a> </h6>
+                    <h6><i>6 comentarios</i> </h6>
+                </div>
+                <div>
+                    <h1>Las bondades de HTML5</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum expedita recusandae et! Omnis similique inventore laboriosam nemo veritatis reprehenderit, dicta quasi rem enim praesentium deserunt doloremque et! Debitis, porro molestiae?</p>
+                    <a class="section__list__a--red">Leer mas</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h6>El 20 de octubre de 2020</h6>
+                    <h6>Por <a class="section__list__a--red">Allen Gray</a> </h6>
+                    <h6><i>2 comentarios</i> </h6>
+                </div>
+                <div>
+                    <h1>Las bondades de HTML5</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum expedita recusandae et! Omnis similique inventore laboriosam nemo veritatis reprehenderit, dicta quasi rem enim praesentium deserunt doloremque et! Debitis, porro molestiae?</p>
+                    <a class="section__list__a--red">Leer mas</a>
+                </div>
+                
+            </li>
+        </ol>
+    </section>
+    <section class="section__hero2">
+        <img src="./porsche-5665390_640.jpg" alt="">
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, recusandae magnam. At labore distinctio totam eligendi fugiat ea dolorem ipsa explicabo sapiente voluptas deserunt quis, facilis doloribus ut minus error!</p></div>
+    </section>
+    <footer>
+        <ol>
+            <li><img src="./icons8-twitter.svg" alt=""></li>
+            <li><img src="./icons8-facebook.svg" alt=""></li>
+            <li><img src="./icons8-spotify.svg" alt=""></li>
+            <li><img src="./icons8-youtube.svg" alt=""></li>
+        </ol>
+        <p>@2020 Todos los derechos reservados</p>
+    </footer>
+    <script></script>
+</body>
+</html>
